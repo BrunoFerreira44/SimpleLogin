@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Cadastro</title>
+      <link rel="stylesheet" href="../css/cadastro.css" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap"
+         rel="stylesheet"
+      />
+   </head>
+   <body>
+      <div id="container-login">
+         <h2>Cadastro</h2>
+
+         <form>
+            <label for="nome">Nome</label>
+            <input
+               type="nome"
+               id="nome"
+               placeholder="Insira seu nome"
+               autocomplete="off"
+            />
+
+            <label for="sobrenome">Sobrenome</label>
+            <input
+               type="sobrenome"
+               id="sobrenome"
+               placeholder="Insira seu sobrenome"
+               autocomplete="off"
+            />
+
+            <label for="email">Email</label>
+            <input
+               type="email"
+               id="email"
+               placeholder="Insira seu email de acesso"
+               autocomplete="off"
+            />
+
+            <label for="password">Senha</label>
+            <div id="pass-section">
+               <input
+                  type="password"
+                  id="password"
+                  placeholder="Insira sua senha de acesso"
+                  autocomplete="off"
+               />
+
+               <img src="../img/password-reveal.png" id="pass-reveal-png" />
+            </div>
+
+            <input type="submit" value="Cadastrar" />
+         </form>
+
+         <a href="../index.html">Retornar para o login</a>
+      </div>
+      <script src="../js/script.js"></script>
+   </body>
+</html>
