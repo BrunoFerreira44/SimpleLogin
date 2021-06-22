@@ -4,14 +4,21 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
       <title>Login</title>
+
       <link rel="stylesheet" href="css/main.css" />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link
          href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap"
          rel="stylesheet"
       />
+      <script
+         src="https://kit.fontawesome.com/39af08bb81.js"
+         crossorigin="anonymous"
+      ></script>
    </head>
+
    <body>
       <div id="container-login">
          <h2>Login</h2>
@@ -26,27 +33,30 @@
             />
 
             <label for="password">Senha</label>
-            <div id="pass-section">
+            <div class="pass-section">
                <input
                   type="password"
                   id="password"
                   placeholder="Insira sua senha"
                   autocomplete="off"
                />
-
-               <img src="img/password-reveal.png" id="pass-reveal-png" />
+               <i class="far fa-eye icon-psw" id="pass-reveal-png"></i>
             </div>
 
-            <div class="forgot-pass">
-               <a href="./view/recuperar-senha.html">Esqueceu a senha?</a>
+            <div class="forgot-pass-section">
+               <a class="forgot-pass-link" href="./view/recuperar-senha.html">
+                  Esqueceu a senha?
+               </a>
             </div>
 
-            <input type="submit" value="Entrar" />
+            <div class="section-btn-entrar">
+               <input type="submit" class="btn-entrar" value="Entrar" />
+            </div>
          </form>
 
-         <section id="novo-cadastro">
-            <p>Ainda não possui uma conta?</p>
-            <a href="./view/cadastro.html">Cadastrar</a>
+         <section class="novo-cadastro" id="novo-cadastro">
+            <p class="novocad-description">Ainda não possui uma conta?</p>
+            <a class="novocad-btn" href="./view/cadastro.html">Cadastrar</a>
          </section>
       </div>
       <script src="js/script.js"></script>
